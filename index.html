@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Análise Jurídica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tailwind CSS configuration extension */
+        .dark {
+            --tw-bg-opacity: 1;
+            background-color: #1a202c; /* Dark background for potential dark mode, though default is light */
+            --tw-text-opacity: 1;
+            color: #edf2f7; /* Light text for dark mode */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif; /* Body font */
+            line-height: 1.75;
+            letter-spacing: 0.01em; /* Subtle letter spacing for readability */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto Slab', serif; /* Display font for headings */
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        /* Custom scrollbar for Webkit browsers */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f7f7f7; /* Light neutral track */
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e0; /* Neutral thumb color */
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a0aec0; /* Darker thumb on hover */
+        }
+
+        /* Ensure text is selectable for copying */
+        body {
+            user-select: text;
+            -webkit-user-select: text; /* Safari */
+            -moz-user-select: text; /* Firefox */
+            -ms-user-select: text; /* IE 10+ */
+        }
+
+        /* Styles for printing */
+        @media print {
+            body {
+                background-color: white !important;
+                color: black !important;
+                font-size: 12pt !important;
+                line-height: 1.5 !important;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .no-print, header, footer, .sidebar, .no-print-margin {
+                display: none !important;
+            }
+            .container {
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                color: black !important;
+                font-family: 'Roboto Slab', serif !important;
+                page-break-after: avoid;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+            a {
+                color: #0000EE !important; /* Standard blue link color for print */
+                text-decoration: underline !important;
+            }
+            p, li, span, div {
+                color: black !important;
+            }
+            .section-divider {
+                border-top-color: #cccccc !important;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neutral-light': '#f8f9fa', // Very light neutral background
+                        'text-dark': '#212529',     // Dark text for high contrast
+                        'primary-text': '#343a40', // Slightly softer dark text
+                        'secondary-text': '#6c757d', // Muted text for less critical info
+                        'border-color': '#dee2e6',   // Subtle border color
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Roboto Slab', 'serif'],
+                    },
+                },
+                screens: {
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+<body class="bg-neutral-light text-primary-text font-sans antialiased">
+
+    <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8 xl:px-12 2xl:px-20">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl font-bold text-text-dark mb-2">Relatório de Análise Jurídica</h1>
+            <p class="text-secondary-text text-lg">Processo: Ação Trabalhista - Rito Sumaríssimo</p>
+        </header>
+
+        <main>
+            <!-- 1. Objeto da análise -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">1. Objeto da análise</h2>
+                <p class="text-primary-text">Ação Trabalhista sob o rito sumaríssimo na qual o Reclamante postula o reconhecimento da Rescisão Indireta do contrato de trabalho (Art. 483, "d", da CLT), sob a alegação de falta de recolhimento de FGTS, atrasos salariais reiterados e inadimplemento do 13º salário. Requer o pagamento de verbas rescisórias correlatas, horas extras por supressão de intervalo intrajornada (45 minutos diários) e labor em domingos/feriados, pagamento retroativo de salário-família, multas dos arts. 467 e 477 da CLT, além de indenização por danos morais (R$ 10.000,00). Valor da causa: R$ 30.540,85.</p>
+            </section>
+
+            <!-- 2. Fase Processual -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">2. Fase Processual</h2>
+                <p class="text-primary-text">Fase de conhecimento inicial. A petição inicial foi distribuída, a certidão de triagem foi emitida pelo juízo e a Reclamada foi devidamente notificada via e-Carta. O Aviso de Recebimento (AR) foi assinado e juntado aos autos em 22/01/2026. Ação aguarda a realização de audiência una/inicial telepresencial.</p>
+            </section>
+
+            <!-- 3. Fatos confirmados -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">3. Fatos Confirmados (Baseados nos documentos juntados)</h2>
+                <ul class="list-disc list-inside text-primary-text space-y-2">
+                    <li><strong>Vínculo empregatício:</strong> Anotado na CTPS com admissão em 17/06/2025, no cargo de Garçom, com salário contratual de R$ 1.518,00. Contrato ativo/sem baixa registrada no extrato da CTPS.</li>
+                    <li><strong>Paternidade:</strong> O Reclamante possui 3 filhos menores, comprovado pelas certidões de nascimento anexadas (nascimentos em 2019, 2021 e 2024).</li>
+                    <li><strong>Notificação da Reclamada:</strong> A empresa foi citada com sucesso no endereço da sede. AR assinado por "Poliana Cruz Santos" em 22/01/2026.</li>
+                    <li><strong>Audiência designada:</strong> 10/04/2026, às 09:00, de forma telepresencial (Sessão via Zoom, 2ª Vara do Trabalho de Vitória da Conquista/BA).</li>
+                </ul>
+            </section>
+
+            <!-- 4. Fatos apenas alegados -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">4. Fatos Apenas Alegados (Exigem instrução probatória / contestação)</h2>
+                <ul class="list-disc list-inside text-primary-text space-y-2">
+                    <li><strong>Remuneração mista:</strong> Alegação de que a remuneração real era de R$ 1.658,00, composta por salário mínimo mais comissões habituais pagas "por fora" (via PIX ou dinheiro).</li>
+                    <li><strong>Jornada de trabalho:</strong> Alegação de labor das 09h às 17h, de segunda a domingo, com folga fixa às terças-feiras e labor em todos os feriados entre junho e dezembro de 2025 sem compensação.</li>
+                    <li><strong>Intervalo intrajornada:</strong> Alegação de fruição de apenas 15 minutos de pausa para refeição e descanso.</li>
+                    <li><strong>Descumprimento de obrigações:</strong> Alegação de ausência total de depósitos de FGTS durante o pacto laboral, inadimplência do 13º salário, atrasos mensais no pagamento da remuneração e não repasse das cotas do salário-família.</li>
+                    <li><strong>Notificação extrajudicial:</strong> Alegação de envio de comunicado de rescisão indireta à empresa em 11/12/2025.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Pontos de atenção / inconsistências -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">5. Pontos de atenção / inconsistências</h2>
+                <ul class="list-disc list-inside text-primary-text space-y-2">
+                    <li><strong>Revelia e Confissão Ficta:</strong> Risco máximo de aplicação dos efeitos da revelia caso a Reclamada não compareça à audiência telepresencial do dia 10/04/2026 e não apresente defesa escrita tempestiva.</li>
+                    <li><strong>Jurisprudência Desfavorável (Rescisão Indireta):</strong> A ausência reiterada de recolhimento de FGTS é tese consolidada no TST como falta grave do empregador, suficiente para justificar a rescisão indireta. Se a empresa não apresentar os comprovantes de recolhimento, há altíssima probabilidade de condenação.</li>
+                    <li><strong>Ônus da Prova da Jornada:</strong> Caso a Reclamada possua mais de 20 funcionários, o ônus de comprovar os horários de entrada, saída e intervalo é documental (cartões de ponto). A não apresentação dos registros inverterá o ônus contra a empresa (Súmula 338, TST), presumindo-se verdadeira a jornada da inicial.</li>
+                    <li><strong>Salário Extrafolha:</strong> O Reclamante anexou extratos bancários tentando demonstrar recebimentos via PIX. A ausência de impugnação específica a essas transferências bancárias pode resultar na integração dessas comissões à base de cálculo das verbas.</li>
+                    <li><strong>Salário-Família:</strong> Como as certidões dos menores foram juntadas, se a Reclamada não comprovar que exigiu a documentação anual (carteira de vacinação/frequência escolar) ou não apresentar os recibos de pagamento do benefício, o risco de condenação retroativa é elevado.</li>
+                </ul>
+            </section>
+
+            <!-- 6. Base legal aplicável -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">6. Base legal aplicável</h2>
+                <p class="text-primary-text">
+                    - Art. 483, "d", da CLT (Rescisão Indireta)<br>
+                    - Arts. 467 e 477 da CLT (Multas)<br>
+                    - Súmula 338 do TST (Ônus da prova de jornada)<br>
+                    - Lei nº 10.101/2000 e Portaria Interministerial MTP/ME nº 12, de 17 de janeiro de 2022 (Salário-Família)
+                </p>
+            </section>
+
+            <!-- 7. Ônus da prova -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">7. Ônus da prova</h2>
+                <p class="text-primary-text">
+                    O ônus da prova quanto aos fatos alegados recai sobre quem os apresentou (Reclamante quanto aos fatos constitutivos de seu direito, Reclamada quanto aos fatos impeditivos, modificativos ou extintivos). Notadamente, o ônus de comprovar o correto recolhimento de FGTS, o pagamento integral da remuneração (incluindo 13º e salário-família), a correta concessão de intervalos intrajornada e a jornada laborada é da Reclamada, especialmente se possuir mais de 20 empregados, conforme Súmula 338 do TST.
+                </p>
+            </section>
+
+            <!-- 8. Teses favoráveis -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">8. Teses favoráveis</h2>
+                <p class="text-primary-text">
+                    Em caso de não apresentação pela Reclamada de comprovantes de recolhimento de FGTS e de recibos salariais/holerites detalhados, a tese de rescisão indireta por falta de recolhimento de FGTS e inadimplemento salarial encontra forte amparo legal e jurisprudencial, podendo levar à condenação. Da mesma forma, a ausência de controles de ponto pode gerar a presunção de veracidade da jornada alegada.
+                </p>
+            </section>
+
+            <!-- 9. Teses contrárias / riscos -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">9. Teses contrárias / riscos</h2>
+                <p class="text-primary-text">
+                    O principal risco reside na capacidade da Reclamada em apresentar documentos comprobatórios de quitação das obrigações trabalhistas e previdenciárias. A defesa consistente com holerites assinados, extrato analítico de FGTS com depósitos em dia, controles de ponto detalhados, comprovantes de pagamento de salário-família e comprovantes do intervalo intrajornada pode mitigar significativamente os riscos. A tese de abandono de emprego, caso comprovada, seria contrária ao pedido de rescisão indireta.
+                </p>
+            </section>
+
+            <!-- 10. Provas existentes -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">10. Provas existentes</h2>
+                <ul class="list-disc list-inside text-primary-text space-y-2">
+                    <li>Petição Inicial com documentos anexados pelo Reclamante:</li>
+                    <li>- CTPS (anotação de admissão, cargo, salário);</li>
+                    <li>- Certidões de nascimento dos filhos menores;</li>
+                    <li>- Extratos bancários (alegação de recebimentos "por fora");</li>
+                    <li>- Comprovantes de envio de notificação extrajudicial (alegada).</li>
+                    <li>- AR da notificação judicial da Reclamada (juntado nos autos).</li>
+                </ul>
+            </section>
+
+            <!-- 11. Provas faltantes -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">11. Provas faltantes</h2>
+                <p class="text-primary-text">
+                    Para a defesa, faltam:
+                    <ul class="list-disc list-inside text-primary-text space-y-2 ml-6">
+                        <li>Extrato analítico de FGTS do trabalhador;</li>
+                        <li>Recibos de pagamento de salário (holerites);</li>
+                        <li>Comprovantes de pagamento de 13º salário;</li>
+                        <li>Controles de jornada (cartões de ponto);</li>
+                        <li>Comprovantes de pagamento de salário-família;</li>
+                        <li>Comprovantes de concessão de intervalo intrajornada (se houver registro).</li>
+                    </ul>
+                </p>
+            </section>
+
+            <!-- 12. Erros identificados -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">12. Erros identificados</h2>
+                <p class="text-primary-text">
+                    Não foram identificados erros no conteúdo factual ou legal apresentado na petição inicial ou nos documentos juntados pelo Reclamante que possam ser utilizados como prova cabal de improcedência neste momento. As inconsistências apontadas decorrem da natureza da instrução probatória, que ainda será realizada.
+                </p>
+            </section>
+
+            <!-- 13. Perguntas complementares -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">13. Perguntas complementares</h2>
+                <ul class="list-disc list-inside text-primary-text space-y-2">
+                    <li>Qual o exato motivo alegado pela Reclamada para a cessação do contrato de trabalho, caso o Reclamante não tenha pedido demissão ou abandonado o posto?</li>
+                    <li>A Reclamada possuía política de pagamento de comissões sobre vendas ou desempenho? Caso positivo, como era formalizada e paga?</li>
+                    <li>Quantos empregados a Reclamada possuía no período contratual?</li>
+                    <li>Havia algum acordo ou norma coletiva que regulamentava de forma diferente os intervalos intrajornada ou jornadas em feriados?</li>
+                    <li>A Reclamada comunicou formalmente ao empregado a concessão de alguma pausa ou a realização de suas folgas?</li>
+                </ul>
+            </section>
+
+            <!-- 14. Próximo passo recomendado -->
+            <section class="mb-8 pb-6 border-b-2 border-border-color section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">14. Próximo passo recomendado</h2>
+                <p class="text-primary-text">
+                    Coleta imediata e urgente de toda a documentação comprobatória de quitação pela Reclamada (FGTS, salários, 13º, salário-família, holerites, controles de ponto, etc.). Análise jurídica detalhada da documentação a ser apresentada e elaboração de contestação robusta, focando em refutar a alegada jornada, a supressão de intervalo, o pagamento "por fora" e a inadimplência de obrigações. Preparação para a audiência telepresencial, com foco na instrução oral e eventual proposta de acordo.
+                </p>
+            </section>
+
+            <!-- 15. Nível de segurança da análise -->
+            <section class="mb-8 pb-6 section-divider">
+                <h2 class="text-2xl font-bold text-text-dark mb-4">15. Nível de segurança da análise</h2>
+                <p class="text-primary-text">
+                    <strong>Moderado para Alto Risco.</strong> A alegada falta de recolhimento de FGTS é um ponto de alta gravidade e forte tese para rescisão indireta. A gestão da prova documental pela Reclamada será crucial para reverter a presunção de veracidade dos fatos alegados pelo Reclamante quanto à jornada e intervalos.
+                </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
